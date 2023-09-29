@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Common styles for both PC and mobile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden; /* Prevent horizontal overflow on small screens */
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result styles */
+.result {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error message styles */
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    /* Styles for screens with a max width of 768px (typical mobile view) */
+    .container {
+        padding: 10px;
+    }
+    
+    /* Additional styles for mobile */
+    input[type="text"] {
+        font-size: 16px;
+    }
+}
+
+/* Styles for screens with a min width of 769px (typical desktop view) */
+@media (min-width: 769px) {
+    .container {
+        padding: 20px;
+    }
+    
+    /* Additional styles for desktop */
+    input[type="text"] {
+        font-size: 18px;
+    }
+}

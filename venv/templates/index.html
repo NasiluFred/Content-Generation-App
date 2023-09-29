@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Generator</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+  
+  <h2 align="center">Content Generator</h2>
+      <form method="POST" action="/generate">
+        <label for="prompt">Enter your content prompt:</label>
+        <input type="text" name="prompt" id="prompt">
+        <button type="submit">Generate Content</button>
+      </form>
+<hr>
+
+<h2>Generated Content:</h2> 
+<p>{{ generated_content }}</p> 
+
+
+
+</body>
+</html>
+
+
