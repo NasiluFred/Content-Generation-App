@@ -19,6 +19,13 @@ body {
     overflow: hidden; /* Prevent horizontal overflow on small screens */
 }
 
+/* Add spacing on both sides of the container */
+.container::before,
+.container::after {
+    content: "";
+    flex-basis: 10px; /* Adjust the spacing width as needed */
+}
+
 /* Header styles */
 h1 {
     color: #333;
