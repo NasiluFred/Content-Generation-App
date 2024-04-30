@@ -3,7 +3,7 @@ import requests
 import cohere  
 
 app = Flask(__name__)
-cohere_api_key = 'VcoKQOkjrTIKRgH2hYbqpUUdcb1xsHm5DnveSG22'
+cohere_api_key = '---'
 cohere_api_url = 'https://api.cohere.ai/'
 
 @app.route('/')
